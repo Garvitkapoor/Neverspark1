@@ -1,0 +1,279 @@
+# Customer Support RAG System Configuration
+
+# System Settings
+system:
+  name: "Customer Support RAG"
+  version: "1.0.0"
+  environment: "production"  # development, staging, production
+  debug: false
+  log_level: "INFO"
+
+# RAG System Configuration
+rag:
+  embedding_model: "all-MiniLM-L6-v2"  # Sentence transformer model
+  chunk_size: 500
+  chunk_overlap: 50
+  max_context_length: 2000
+  n_results_default: 3
+  similarity_threshold: 0.7
+
+# Vector Database Configuration
+vectordb:
+  provider: "chromadb"  # chromadb, pinecone, weaviate
+  persist_directory: "./chroma_db"
+  collection_name: "customer_support_kb"
+  distance_metric: "cosine"
+  
+  # For Pinecone (if used)
+  pinecone:
+    api_key: null
+    environment: null
+    index_name: "customer-support"
+    
+  # For Weaviate (if used)
+  weaviate:
+    url: "http://localhost:8080"
+    api_key: null
+
+# Sentiment Analysis Configuration
+sentiment:
+  use_transformer: true
+  transformer_model: "j-hartmann/emotion-english-distilroberta-base"
+  confidence_threshold: 0.5
+  batch_size: 32
+  
+  # Emotion detection settings
+  emotions:
+    - "joy"
+    - "sadness"
+    - "anger"
+    - "fear"
+    - "surprise"
+    - "disgust"
+
+# Escalation Prediction Configuration
+escalation:
+  # Risk level thresholds
+  thresholds:
+    low: 0.0
+    low_medium: 0.2
+    medium: 0.4
+    high: 0.7
+    critical: 0.9
+  
+  # Feature weights
+  weights:
+    language_patterns: 0.5
+    behavioral_patterns: 0.3
+    sentiment_scores: 0.2
+  
+  # Historical data retention
+  max_interactions_per_customer: 50
+  data_retention_days: 90
+
+# Response Generation Configuration
+response_generation:
+  use_openai: true
+  openai_model: "gpt-3.5-turbo"
+  max_tokens: 500
+  temperature: 0.7
+  
+  # Fallback to templates if OpenAI unavailable
+  template_fallback: true
+  
+  # Response customization
+  tone_calibration: true
+  empathy_enhancement: true
+  solution_focus: true
+
+# API Configuration
+api:
+  rate_limiting:
+    requests_per_minute: 60
+    burst_limit: 10
+  
+  # OpenAI API
+  openai:
+    api_key: null  # Set via environment variable OPENAI_API_KEY
+    organization: null
+    timeout: 30
+    max_retries: 3
+
+# Streamlit Configuration
+streamlit:
+  page_title: "Customer Support RAG System"
+  page_icon: "🤖"
+  layout: "wide"
+  sidebar_state: "expanded"
+  
+  # UI Features
+  show_debug_info: false
+  auto_response: true
+  real_time_analytics: true
+  
+  # Theme
+  theme:
+    primary_color: "#667eea"
+    background_color: "#ffffff"
+    secondary_background_color: "#f8f9fa"
+    text_color: "#262730"
+
+# Data Configuration
+data:
+  knowledge_base_path: "data/knowledge_base.json"
+  sample_conversations_path: "data/sample_conversations.json"
+  
+  # Data validation
+  validate_on_load: true
+  required_fields:
+    knowledge_base: ["id", "title", "content", "category"]
+    conversations: ["conversation_id", "messages"]
+
+# Security Configuration
+security:
+  # Customer data privacy
+  anonymize_customer_ids: true
+  data_retention_policy: "90_days"
+  
+  # API Security
+  require_auth: false  # Set to true in production
+  api_key_header: "X-API-Key"
+  
+  # Logging
+  log_sensitive_data: false
+  mask_personal_info: true
+
+# Performance Configuration
+performance:
+  # Caching
+  cache_embeddings: true
+  cache_ttl_seconds: 3600
+  
+  # Batch processing
+  batch_size: 32
+  max_concurrent_requests: 10
+  
+  # Resource limits
+  max_memory_mb: 4096
+  max_processing_time_seconds: 30
+
+# Monitoring and Analytics
+monitoring:
+  enable_metrics: true
+  metrics_retention_days: 30
+  
+  # Performance tracking
+  track_response_time: true
+  track_accuracy_metrics: true
+  track_user_satisfaction: true
+  
+  # Alerting
+  alerts:
+    high_error_rate_threshold: 0.05
+    slow_response_threshold_seconds: 5
+    low_accuracy_threshold: 0.8
+
+# Evaluation Configuration
+evaluation:
+  # Evaluation intervals
+  run_daily_evaluation: true
+  comprehensive_evaluation_frequency: "weekly"
+  
+  # Test data
+  test_data_path: "data/test_data.json"
+  
+  # Metrics to track
+  metrics:
+    retrieval:
+      - "precision_at_3"
+      - "recall_at_3"
+      - "mrr"
+      - "map"
+    sentiment:
+      - "accuracy"
+      - "macro_f1"
+      - "class_metrics"
+    escalation:
+      - "precision"
+      - "recall"
+      - "f1"
+      - "auc"
+    response:
+      - "bleu"
+      - "rouge"
+      - "empathy_score"
+      - "solution_score"
+
+# Deployment Configuration
+deployment:
+  platform: "streamlit_cloud"  # streamlit_cloud, heroku, aws, gcp, azure
+  
+  # Streamlit Cloud
+  streamlit_cloud:
+    python_version: "3.9"
+    requirements_file: "requirements.txt"
+    
+  # Environment variables (set these in deployment platform)
+  env_vars:
+    - "OPENAI_API_KEY"
+    - "CHROMA_PERSIST_DIRECTORY"
+    - "LOG_LEVEL"
+    - "STREAMLIT_SERVER_PORT"
+  
+  # Health checks
+  health_check:
+    endpoint: "/health"
+    timeout_seconds: 10
+    interval_seconds: 30
+
+# Integration Configuration
+integrations:
+  # Customer support platforms
+  zendesk:
+    enabled: false
+    api_token: null
+    subdomain: null
+  
+  intercom:
+    enabled: false
+    access_token: null
+  
+  # Notification systems
+  slack:
+    enabled: false
+    webhook_url: null
+    escalation_channel: "#customer-support"
+  
+  email:
+    enabled: false
+    smtp_server: null
+    smtp_port: 587
+    username: null
+    password: null
+
+# Feature Flags
+features:
+  sentiment_analysis: true
+  escalation_prediction: true
+  response_generation: true
+  knowledge_retrieval: true
+  conversation_history: true
+  analytics_dashboard: true
+  real_time_processing: true
+  batch_processing: false
+  multi_language_support: false
+  voice_input: false
+
+# Experimental Features
+experimental:
+  # Advanced models
+  use_gpt4: false
+  use_claude: false
+  
+  # Multi-modal support
+  image_analysis: false
+  audio_analysis: false
+  
+  # Advanced analytics
+  customer_journey_tracking: false
+  predictive_analytics: false 

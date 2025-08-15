@@ -1,0 +1,92 @@
+[
+  {
+    "id": "kb_001",
+    "title": "Account Login Issues",
+    "content": "If you're having trouble logging into your account, please try the following steps:\n\n1. **Check your email and password**: Make sure you're using the correct email address and password. Remember that passwords are case-sensitive.\n\n2. **Reset your password**: Click on the 'Forgot Password' link on the login page. We'll send you a password reset email within 5 minutes.\n\n3. **Clear browser cache**: Sometimes cached data can interfere with login. Clear your browser's cache and cookies, then try again.\n\n4. **Try incognito/private mode**: This helps identify if browser extensions are causing issues.\n\n5. **Check for account lockout**: After 5 failed login attempts, accounts are temporarily locked for 30 minutes for security.\n\nIf you continue to experience issues, please contact our support team with your account email address.",
+    "category": "account",
+    "tags": ["login", "password", "authentication", "troubleshooting"],
+    "type": "article",
+    "priority": "high"
+  },
+  {
+    "id": "kb_002",
+    "title": "Billing and Payment Questions",
+    "content": "Here's everything you need to know about billing and payments:\n\n**Payment Methods Accepted:**\n- Credit/Debit cards (Visa, MasterCard, American Express)\n- PayPal\n- Bank transfers (for annual plans)\n- Digital wallets (Apple Pay, Google Pay)\n\n**Billing Cycles:**\n- Monthly plans: Billed on the same date each month\n- Annual plans: Billed yearly with 20% discount\n- Billing occurs 24-48 hours before your service renewal\n\n**Common Issues:**\n- **Payment failed**: Check card details, expiration date, and available funds\n- **Unexpected charges**: Review your plan details and any add-ons\n- **Billing address mismatch**: Ensure billing address matches your payment method\n\n**Refund Policy:**\n- 30-day money-back guarantee for new customers\n- Pro-rated refunds for downgrades\n- No refunds for violations of terms of service\n\nFor billing disputes, please contact our billing department with your account details and transaction information.",
+    "category": "billing",
+    "tags": ["payment", "billing", "refund", "subscription", "credit card"],
+    "type": "article",
+    "priority": "high"
+  },
+  {
+    "id": "kb_003",
+    "title": "How to Cancel Your Subscription",
+    "content": "We're sorry to see you go! Here's how to cancel your subscription:\n\n**Self-Service Cancellation:**\n1. Log into your account dashboard\n2. Go to 'Billing & Subscription' section\n3. Click 'Manage Subscription'\n4. Select 'Cancel Subscription'\n5. Follow the prompts to confirm cancellation\n\n**What Happens After Cancellation:**\n- Your service continues until the end of your current billing period\n- You'll receive a confirmation email\n- No future charges will be made\n- Your data is retained for 90 days in case you want to reactivate\n\n**Before You Cancel:**\n- Consider downgrading to a lower plan instead\n- Contact us about any issues - we might be able to help!\n- Export any important data you want to keep\n\n**Reactivation:**\n- You can reactivate anytime within 90 days\n- After 90 days, you'll need to create a new account\n- All previous data and settings can be restored within the 90-day window\n\nIf you have trouble canceling online, please contact our retention team who can assist you.",
+    "category": "subscription",
+    "tags": ["cancel", "subscription", "billing", "account"],
+    "type": "article",
+    "priority": "medium"
+  },
+  {
+    "id": "kb_004",
+    "title": "Technical Support - Common Issues",
+    "content": "Here are solutions to the most common technical issues:\n\n**App Not Loading:**\n1. Check your internet connection\n2. Update to the latest app version\n3. Restart the application\n4. Restart your device\n5. Reinstall the app if problems persist\n\n**Slow Performance:**\n- Close other applications to free up memory\n- Check available storage space (need at least 1GB free)\n- Update your operating system\n- Clear app cache and temporary files\n\n**Sync Issues:**\n- Ensure you're connected to the internet\n- Check sync settings in preferences\n- Log out and log back in\n- Wait a few minutes for sync to complete\n\n**Feature Not Working:**\n- Check if the feature requires a premium subscription\n- Verify your account permissions\n- Look for feature updates in app settings\n- Restart the app after changing settings\n\n**Error Messages:**\n- Take a screenshot of the error\n- Note when the error occurs\n- Try the action again after a few minutes\n- Contact support with error details\n\n**Browser Compatibility:**\n- Supported browsers: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+\n- Enable JavaScript and cookies\n- Disable ad blockers for our site\n- Try in incognito/private mode\n\nFor complex technical issues, please contact our technical support team with your device information and a detailed description of the problem.",
+    "category": "technical",
+    "tags": ["troubleshooting", "performance", "app", "browser", "sync"],
+    "type": "article",
+    "priority": "high"
+  },
+  {
+    "id": "kb_005",
+    "title": "Getting Started Guide",
+    "content": "Welcome! Here's your step-by-step guide to getting started:\n\n**Initial Setup:**\n1. **Verify your email**: Check your inbox for a verification email and click the confirmation link\n2. **Complete your profile**: Add your name, photo, and preferences\n3. **Choose your plan**: Select the subscription that best fits your needs\n4. **Set up payment**: Add a valid payment method for seamless service\n\n**First Steps:**\n1. **Take the tour**: Use our guided walkthrough to learn key features\n2. **Import data**: Upload existing files or connect with other services\n3. **Customize settings**: Adjust preferences to match your workflow\n4. **Invite team members**: Add colleagues if you're on a team plan\n\n**Essential Features to Try:**\n- Dashboard overview for quick insights\n- Create your first project or workspace\n- Set up notifications and alerts\n- Explore templates and examples\n- Connect mobile app for on-the-go access\n\n**Learning Resources:**\n- Video tutorials in the Help Center\n- Interactive feature guides\n- Webinar schedule for live training\n- Community forum for tips and tricks\n- Knowledge base for detailed documentation\n\n**Need Help?**\n- Use the in-app chat for quick questions\n- Schedule a one-on-one onboarding session\n- Join our weekly new user Q&A sessions\n- Contact support for personalized assistance\n\nRemember, there's no rush! Take your time to explore and don't hesitate to reach out if you need help.",
+    "category": "onboarding",
+    "tags": ["getting started", "setup", "tutorial", "new user"],
+    "type": "guide",
+    "priority": "medium"
+  },
+  {
+    "id": "kb_006",
+    "title": "Data Security and Privacy",
+    "content": "Your data security and privacy are our top priorities. Here's how we protect your information:\n\n**Data Encryption:**\n- All data is encrypted in transit using TLS 1.3\n- Data at rest is encrypted using AES-256 encryption\n- End-to-end encryption for sensitive communications\n- Regular security audits and penetration testing\n\n**Privacy Controls:**\n- You control who has access to your data\n- Granular privacy settings for different data types\n- Data anonymization options available\n- Right to download or delete your data anytime\n\n**Compliance Standards:**\n- GDPR compliant for European users\n- SOC 2 Type II certified\n- HIPAA compliant features for healthcare data\n- Regular compliance audits and certifications\n\n**Data Backup and Recovery:**\n- Automated daily backups\n- Multiple geographic backup locations\n- 99.9% uptime guarantee\n- Disaster recovery procedures in place\n\n**Account Security:**\n- Two-factor authentication (2FA) available\n- Session monitoring and management\n- Suspicious activity alerts\n- Regular password security recommendations\n\n**Data Retention:**\n- Active account data retained as long as account is active\n- Deleted data permanently removed within 30 days\n- Backup data retention follows legal requirements\n- Option to set custom data retention policies\n\n**Transparency:**\n- Regular transparency reports published\n- Clear privacy policy in plain language\n- Data processing activities documented\n- User notification for any security incidents\n\nFor specific security questions or to report a security concern, please contact our security team directly.",
+    "category": "security",
+    "tags": ["security", "privacy", "encryption", "compliance", "data protection"],
+    "type": "article",
+    "priority": "medium"
+  },
+  {
+    "id": "kb_007",
+    "title": "Mobile App Features and Troubleshooting",
+    "content": "Our mobile app brings full functionality to your phone and tablet:\n\n**Key Mobile Features:**\n- Full access to your dashboard and data\n- Offline mode for working without internet\n- Push notifications for important updates\n- Camera integration for document scanning\n- Voice notes and dictation support\n- Biometric login (fingerprint/face recognition)\n\n**Installation:**\n- Download from App Store (iOS) or Google Play (Android)\n- Minimum requirements: iOS 13+ or Android 8+\n- App size: ~50MB\n- Automatic updates available\n\n**Mobile-Specific Troubleshooting:**\n\n**App Crashes:**\n1. Force close and restart the app\n2. Restart your device\n3. Update to latest app version\n4. Clear app cache (Android) or reinstall (iOS)\n5. Check available storage space\n\n**Sync Issues:**\n- Ensure background app refresh is enabled\n- Check mobile data or WiFi connection\n- Verify account login status\n- Force sync by pulling down on main screen\n\n**Notification Problems:**\n- Check notification permissions in device settings\n- Verify notification preferences in app settings\n- Ensure 'Do Not Disturb' mode isn't blocking notifications\n- Check if battery optimization is affecting the app\n\n**Performance Issues:**\n- Close other apps to free up memory\n- Restart your device regularly\n- Update your operating system\n- Clear app cache periodically\n\n**Offline Mode:**\n- Download content for offline access in settings\n- Sync automatically when connection is restored\n- Limited functionality available offline\n- Changes sync once back online\n\n**Camera and Scanning:**\n- Allow camera permissions in device settings\n- Ensure good lighting for document scanning\n- Hold device steady for clear scans\n- Use document edges detection for best results\n\nFor mobile-specific issues, please include your device model and OS version when contacting support.",
+    "category": "mobile",
+    "tags": ["mobile app", "iOS", "Android", "troubleshooting", "offline"],
+    "type": "article",
+    "priority": "medium"
+  },
+  {
+    "id": "kb_008",
+    "title": "Plan Upgrades and Downgrades",
+    "content": "Changing your subscription plan is easy and flexible:\n\n**How to Change Your Plan:**\n1. Go to Account Settings > Billing & Subscription\n2. Click 'Change Plan'\n3. Select your new plan\n4. Review changes and confirm\n5. Changes take effect immediately\n\n**Upgrading Your Plan:**\n- **Immediate access** to new features\n- **Pro-rated billing** - you only pay for the time remaining\n- **No data loss** - all existing data is preserved\n- **Higher usage limits** apply immediately\n- **Priority support** if upgrading to premium plans\n\n**Downgrading Your Plan:**\n- Changes take effect at next billing cycle\n- **Data preservation**: existing data is kept but may be read-only if over new limits\n- **Feature access**: some features may become unavailable\n- **Usage limits**: reduced limits apply at next billing period\n- **Partial refunds** for annual plans (pro-rated)\n\n**Plan Comparison:**\n\n**Basic Plan ($9/month):**\n- 5 projects\n- 1GB storage\n- Email support\n- Standard features\n\n**Pro Plan ($19/month):**\n- 25 projects\n- 10GB storage\n- Priority support\n- Advanced features\n- Team collaboration\n\n**Enterprise Plan ($49/month):**\n- Unlimited projects\n- 100GB storage\n- Phone support\n- Premium features\n- Advanced security\n- Custom integrations\n\n**Important Notes:**\n- **Annual plans** save 20% compared to monthly\n- **Educational discounts** available with valid .edu email\n- **Non-profit discounts** available with verification\n- **Enterprise custom pricing** for large organizations\n\n**What Happens to Your Data:**\n- Upgrading: All data remains accessible\n- Downgrading: Data over new limits becomes read-only\n- Canceling: Data retained for 90 days\n\nIf you need help choosing the right plan, our sales team can provide personalized recommendations based on your needs.",
+    "category": "subscription",
+    "tags": ["upgrade", "downgrade", "plans", "pricing", "billing"],
+    "type": "article",
+    "priority": "medium"
+  },
+  {
+    "id": "kb_009",
+    "title": "API and Integration Support",
+    "content": "Connect our service with your existing tools and workflows:\n\n**API Documentation:**\n- RESTful API with JSON responses\n- Comprehensive developer documentation\n- Interactive API explorer\n- SDKs available for popular languages\n- Webhook support for real-time updates\n\n**Getting Started with API:**\n1. **Generate API key** in your account settings\n2. **Read the documentation** at docs.api.ourservice.com\n3. **Test endpoints** using our interactive explorer\n4. **Implement authentication** using API key or OAuth2\n5. **Follow rate limits** to ensure reliable access\n\n**Popular Integrations:**\n\n**CRM Systems:**\n- Salesforce\n- HubSpot\n- Pipedrive\n- Zoho CRM\n- Custom CRM via API\n\n**Productivity Tools:**\n- Slack notifications\n- Microsoft Teams\n- Google Workspace\n- Microsoft Office 365\n- Zapier automation\n\n**Development Tools:**\n- GitHub\n- GitLab\n- Jira\n- Trello\n- Azure DevOps\n\n**Analytics and Reporting:**\n- Google Analytics\n- Tableau\n- Power BI\n- Custom dashboards via API\n\n**Rate Limits:**\n- Basic Plan: 1,000 requests/hour\n- Pro Plan: 10,000 requests/hour\n- Enterprise Plan: 100,000 requests/hour\n- Burst limits available for short peaks\n\n**Authentication:**\n- **API Key**: Simple authentication for server-to-server\n- **OAuth 2.0**: Secure authentication for user applications\n- **JWT tokens**: For session-based authentication\n- **IP whitelisting**: Available for enterprise accounts\n\n**Webhook Events:**\n- Data creation/modification\n- User actions\n- System status changes\n- Billing events\n- Security alerts\n\n**Support for Developers:**\n- Dedicated developer support channel\n- Community forum for developers\n- Sample code and tutorials\n- Regular API updates and changelog\n- Beta program for new features\n\n**Troubleshooting Common Issues:**\n- **401 Unauthorized**: Check API key and permissions\n- **429 Rate Limited**: Implement exponential backoff\n- **500 Server Error**: Check system status page\n- **Timeout**: Increase timeout settings in your code\n\nFor technical integration support, please contact our developer relations team with specific details about your use case.",
+    "category": "technical",
+    "tags": ["API", "integration", "developers", "webhook", "authentication"],
+    "type": "technical_guide",
+    "priority": "low"
+  },
+  {
+    "id": "kb_010",
+    "title": "Emergency Support and Critical Issues",
+    "content": "For urgent issues that require immediate attention:\n\n**What Qualifies as Emergency Support:**\n- **Service outage** affecting your business operations\n- **Security incidents** or suspected breaches\n- **Data loss** or corruption issues\n- **Critical bug** preventing core functionality\n- **Payment processing failures** affecting service access\n\n**How to Request Emergency Support:**\n1. **Call our emergency hotline**: 1-800-URGENT-HELP\n2. **Mark ticket as 'Critical'** when submitting online\n3. **Email emergency@support.com** with 'URGENT' in subject\n4. **Use live chat** and mention it's an emergency\n\n**Emergency Response Times:**\n- **Enterprise customers**: 15 minutes\n- **Pro customers**: 1 hour\n- **Basic customers**: 4 hours\n- **24/7 coverage** for Enterprise plans\n\n**Information to Provide:**\n- **Account details**: Your account email and ID\n- **Issue description**: Clear, detailed explanation\n- **Impact assessment**: How it affects your business\n- **Steps taken**: What you've already tried\n- **Error messages**: Screenshots or exact text\n- **Timeline**: When the issue started\n\n**Temporary Workarounds:**\nWhile waiting for resolution, try these general steps:\n- **Service outage**: Check status page for updates\n- **Login issues**: Try incognito mode or different browser\n- **Data sync**: Wait 10-15 minutes then refresh\n- **Performance**: Clear cache and restart application\n\n**Escalation Process:**\n1. **L1 Support**: Initial response and basic troubleshooting\n2. **L2 Support**: Advanced technical investigation\n3. **Engineering Team**: Core system issues\n4. **Management**: Service-wide outages\n\n**Communication During Emergencies:**\n- **Status updates** every 30 minutes for critical issues\n- **Direct contact** with assigned engineer\n- **Progress notifications** via phone, email, or chat\n- **Post-incident report** provided after resolution\n\n**Prevention and Monitoring:**\n- **System monitoring**: 24/7 automated alerts\n- **Preventive maintenance**: Scheduled during low-usage hours\n- **Redundancy**: Multiple backup systems in place\n- **Regular testing**: Disaster recovery procedures\n\n**After Emergency Resolution:**\n- **Root cause analysis** provided\n- **Prevention measures** implemented\n- **Service credits** if applicable\n- **Process improvements** based on incident learnings\n\n**Critical Business Hours:**\n- **Phone support**: 24/7 for Enterprise, business hours for others\n- **Chat support**: 24/7 for Pro and Enterprise\n- **Email support**: Monitored 24/7, faster response during business hours\n\nRemember: False emergency reports may result in reduced priority for future requests. Please use emergency channels only for truly urgent issues.",
+    "category": "support",
+    "tags": ["emergency", "critical", "urgent", "outage", "escalation"],
+    "type": "procedure",
+    "priority": "high"
+  }
+] 
