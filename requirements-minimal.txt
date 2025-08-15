@@ -1,0 +1,29 @@
+# Minimal requirements for Streamlit Cloud deployment
+# Use this if the main requirements.txt fails
+
+# Core Streamlit
+streamlit
+
+# Essential dependencies only
+numpy
+pandas
+
+# Vector database (essential for RAG)
+chromadb
+
+# Embeddings (essential for RAG)  
+sentence-transformers
+
+# Sentiment analysis (core feature)
+textblob
+vaderSentiment
+
+# Visualization (for dashboard)
+plotly
+
+# OpenAI (optional but recommended)
+openai
+
+# Basic utilities
+python-dotenv
+requests 

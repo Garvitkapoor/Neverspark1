@@ -156,8 +156,9 @@ config.ini
 
 # Data files (if large)
 data/large_datasets/
-*.csv
-*.jsonl
+# Note: keeping requirements-minimal.txt for deployment fallback
+# *.csv
+# *.jsonl
 
 # Hugging Face cache
 .cache/

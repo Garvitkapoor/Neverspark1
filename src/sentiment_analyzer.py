@@ -80,9 +80,12 @@ class SentimentAnalyzer:
             
         except Exception as e:
             logger.warning(f"Could not load emotion classifier: {e}")
-            logger.info("Falling back to rule-based emotion detection")
+            logger.info("Falling back to rule-based emotion detection only")
             self.emotion_classifier = None
             self.use_transformer = False
+            
+            # For deployment compatibility - don't fail entirely
+            logger.info("Sentiment analysis will use VADER + TextBlob + rule-based detection")
     
     def analyze_sentiment(self, text: str) -> Dict[str, Any]:
         """

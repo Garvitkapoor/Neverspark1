@@ -12,18 +12,23 @@ import time
 import logging
 from typing import Dict, List, Any, Optional
 
-# Import our custom modules
-from src.rag_system import RAGSystem
-from src.sentiment_analyzer import SentimentAnalyzer
-from src.escalation_predictor import EscalationPredictor
-from src.response_generator import ResponseGenerator
-from src.utils import (
-    load_json_file, 
-    generate_customer_id, 
-    clean_text, 
-    get_time_ago,
-    create_response_summary
-)
+# Import our custom modules with error handling
+try:
+    from src.rag_system import RAGSystem
+    from src.sentiment_analyzer import SentimentAnalyzer
+    from src.escalation_predictor import EscalationPredictor
+    from src.response_generator import ResponseGenerator
+    from src.utils import (
+        load_json_file, 
+        generate_customer_id, 
+        clean_text, 
+        get_time_ago,
+        create_response_summary
+    )
+except ImportError as e:
+    st.error(f"Error importing modules: {e}")
+    st.error("Please check that all required files are present in the repository.")
+    st.stop()
 
 # Configure page
 st.set_page_config(

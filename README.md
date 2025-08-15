@@ -147,6 +147,8 @@ customer-support-rag/
 3. Set environment variables in Streamlit Cloud dashboard
 4. Deploy with one click
 
+**If you encounter deployment errors**, see `STREAMLIT_DEPLOYMENT_FIX.md` for troubleshooting steps.
+
 ### Local Development
 ```bash
 # Install in development mode

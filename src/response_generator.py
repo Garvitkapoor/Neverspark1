@@ -33,13 +33,18 @@ class ResponseGenerator:
         """
         # Set up OpenAI if API key is available
         self.use_openai = False
-        if openai_api_key or os.getenv("OPENAI_API_KEY"):
+        openai_key = openai_api_key or os.getenv("OPENAI_API_KEY")
+        
+        if openai_key and openai_key != "your-openai-api-key-here":
             try:
-                openai.api_key = openai_api_key or os.getenv("OPENAI_API_KEY")
+                openai.api_key = openai_key
                 self.use_openai = True
                 logger.info("OpenAI API initialized for enhanced response generation")
             except Exception as e:
                 logger.warning(f"Could not initialize OpenAI API: {e}")
+                logger.info("Will use template-based response generation")
+        else:
+            logger.info("No OpenAI API key provided - using template-based response generation")
         
         # Response templates by emotion and urgency
         self.response_templates = {
